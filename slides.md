@@ -5,26 +5,9 @@ tags:
   - datetime
 ---
 
-<br/>
-<br/>
-<br/>
-
-### 안녕하세요! 👋 파이썬 YOLOv3 객체 탐지 강의에 오신 것을 환영합니다!
-
-본 강의 목표:
-
-- 딥러닝 기반 객체 탐지 기술 YOLOv3 파이썬/OpenCV로 직접 구현 및 실시간 실행
-- 인공지능 핵심 기술 "객체 탐지" 직접 체험
-
-**흥미로운 시간!**
-
----
-
-## layout: section
-
-## 오늘 배울 내용 🚀
-
 **학습 목표:**
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 1. **객체 탐지 기초 개념 이해**
 
@@ -60,13 +43,13 @@ tags:
    - 다양한 객체 탐지 모델 소개/비교 (YOLOv4, YOLOv5 등)
    - 실제 프로젝트 객체 탐지 기술 적용 아이디어 제시
 
-**실습 중심 강의 (코드 직접 작성/실행). 재미있고 유익한 시간!** 😄
+</div>
 
 ---
 
-## layout: section
-
 ## 1. 객체 탐지 (Object Detection) 기초 개념 이해
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 ### 1.1 객체 탐지란? 🤔
 
@@ -122,13 +105,15 @@ tags:
 
 **객체 탐지 기술:** 엔터테인먼트, 교육, 로봇 공학, 개인 비서 서비스 등 혁신적 변화 주도
 
----
+</div>
 
-## layout: section
+---
 
 ## 2. YOLO (You Only Look Once) 알고리즘 소개
 
 ### 2.1 YOLO란? 🚀
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 **YOLO (You Only Look Once):** 2015년 발표, 실시간 객체 탐지 딥러닝 알고리즘
 
@@ -149,7 +134,13 @@ tags:
 
 **YOLO:** 빠른 속도 + 준수한 정확도 One-Stage Detector, 실시간 객체 탐지 분야 널리 사용
 
+</div>
+
+---
+
 ### 2.2 YOLO 핵심 아이디어 및 작동 원리 💡
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 YOLO 핵심 아이디어: **이미지 전체 한 번 신경망 연산 처리** → 객체 탐지 수행
 
@@ -176,7 +167,13 @@ YOLO 핵심 아이디어: **이미지 전체 한 번 신경망 연산 처리** �
 
 **YOLO:** 실시간 객체 탐지 분야 가장 널리 사용 알고리즘, 다양한 응용 분야 우수 성능
 
+</div>
+
+---
+
 ### 2.3 YOLOv3 모델 특징 및 장점 ✨
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 **YOLOv3:** YOLO 알고리즘 세 번째 버전 (2018년 발표), YOLOv2 대비 특징/장점 강화
 
@@ -211,13 +208,15 @@ YOLO 핵심 아이디어: **이미지 전체 한 번 신경망 연산 처리** �
 
 **YOLOv3:** 객체 탐지 분야 널리 사용 강력/효율적 모델, 본 강의 YOLOv3 활용 실시간 객체 탐지 구현
 
----
+</div>
 
-## layout: section
+---
 
 ## 3. 개발 환경 설정
 
 ### 3.1 필수 라이브러리 설치 🛠️
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 YOLOv3 객체 탐지 파이썬 구현 필수 라이브러리:
 
@@ -249,7 +248,13 @@ print("NumPy version:", np.__version__)
 
 각 라이브러리 버전 정보 출력 → 정상 설치 완료
 
+</div>
+
+---
+
 ### 3.2 YOLO 모델 파일 및 클래스 이름 파일 준비 📂
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 YOLOv3 객체 탐지 실행 필수 파일:
 
@@ -296,6 +301,10 @@ yolo/
 
 **주의:** 파일 경로 코드 정확히 반영 → 오류 방지
 
+</div>
+
+---
+
 ### 3.3 입력 비디오 파일 준비 (선택 사항) 🎬
 
 실시간 객체 탐지 데모 위해 비디오 파일 필요 (이미지 파일 객체 탐지 가능)
@@ -308,13 +317,9 @@ yolo/
 
 ---
 
-## layout: section
-
 ## 4. 파이썬 코드를 이용한 YOLOv3 객체 탐지 구현
 
 ### 4.1 전체 코드 살펴보기 💻
-
-제공 파이썬 코드 전체적 흐름 파악 (자세한 분석/설명 예정)
 
 ```python
 import cv2
@@ -388,6 +393,8 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
+---
+
 **코드 실행 순서:**
 
 1. 라이브러리 import (cv2, numpy)
@@ -403,7 +410,11 @@ cv2.destroyAllWindows()
 11. 종료 조건 확인 (ESC 키 입력 시 종료)
 12. 자원 해제 (비디오 캡쳐 객체 해제, 창 닫기)
 
+---
+
 ### 4.2 코드 한 줄씩 꼼꼼하게 분석하기 🔍
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 **1. 라이브러리 import:**
 
@@ -627,7 +638,13 @@ cv2.destroyAllWindows()
 - `cap.release()`: 비디오 캡쳐 객체 `cap` 해제. 비디오 파일 더 이상 사용 X → 자원 반환.
 - `cv2.destroyAllWindows()`: OpenCV 생성 모든 창 닫기. 프로그램 종료 시 창 깔끔하게 닫음.
 
+</div>
+
+---
+
 ### 4.3 코드 실행 방법 및 결과 확인 🎬
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 **코드 실행 방법:**
 
@@ -652,13 +669,13 @@ cv2.destroyAllWindows()
 - YOLO 모델 파일/클래스 이름 파일 손상 여부 확인 (파일 재다운로드).
 - 코드 오타 확인 (꼼꼼하게 확인).
 
-**위 단계 차근차근 확인 → 대부분 오류 해결, 객체 탐지 프로그램 성공적 실행 가능.**
+</div>
 
 ---
 
-## layout: section
-
 ## 5. 객체 탐지 결과 분석 및 활용
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 ### 5.1 탐지 결과 이해하기 🧐
 
@@ -684,7 +701,13 @@ YOLOv3 객체 탐지 코드 실행 시 객체별 출력 정보:
 
 **탐지 결과 활용:** 이미지 속 객체 위치, 종류, 신뢰도 파악
 
+</div>
+
+---
+
 ### 5.2 Non-Maximum Suppression (NMS) 이해 🧩
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 **NMS (Non-Maximum Suppression):** 객체 탐지 결과 **중복 바운딩 박스 제거** 후처리 기법
 
@@ -719,7 +742,13 @@ indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
 - `nms_threshold = 0.4`: NMS 임계값 (IoU threshold) 0.4 설정. IoU 0.4 초과 겹치는 박스 중복 간주, 제거.
 - NMS 임계값 조절 → NMS 강도 조절 가능. 임계값 낮추면 더 많은 박스 제거, 높이면 덜 제거.
 
+</div>
+
+---
+
 ### 5.3 탐지 결과 활용 아이디어 💡
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 객체 탐지 결과 다양한 분야 활용 가능. 활용 아이디어 제시:
 
@@ -732,13 +761,15 @@ indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
 
 **객체 탐지 기술:** 무궁무진 활용 가능성, 창의적 아이디어 더해 다양한 분야 활용 가능!
 
----
+</div>
 
-## layout: section
+---
 
 ## 6. 심화 학습 방향 제시
 
 ### 6.1 YOLOv3 모델 성능 개선 방법 🚀
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 YOLOv3 모델 성능 향상 방법:
 
@@ -769,7 +800,13 @@ YOLOv3 모델 성능 향상 방법:
 
 **위 방법 활용 YOLOv3 모델 정확도/속도 성능 향상 가능. 실제 프로젝트 적용 시 성능 개선 다양한 시도 중요.**
 
-### 6.2 다양한 객체 탐지 모델 소개 및 비교 🤖
+</div>
+
+---
+
+### 6.2 다양한 객체 탐지 모델 소개 및 비교
+
+<div class="overflow-y-auto max-h-[400px] border rounded p-4">
 
 YOLOv3 외 다양한 객체 탐지 모델 존재, 각 장단점 보유. 대표 모델 소개/비교:
 
@@ -805,6 +842,10 @@ YOLOv3 외 다양한 객체 탐지 모델 존재, 각 장단점 보유. 대표 �
 
 **프로젝트 요구 사항/환경 따라 최적 객체 탐지 모델 선택 중요.**
 
+</div>
+
+---
+
 ### 6.3 실제 프로젝트 적용 아이디어 💡
 
 객체 탐지 기술 실제 프로젝트 적용 가능 아이디어 제시:
@@ -818,34 +859,4 @@ YOLOv3 외 다양한 객체 탐지 모델 존재, 각 장단점 보유. 대표 �
 - **운전자 졸음운전 감지 시스템:** 운전자 얼굴/눈동자 움직임 분석 → 졸음운전 징후 감지, 경고 시스템 구축.
 - **AR 기반 객체 정보 제공 앱:** 스마트폰 카메라 객체 인식, 객체 관련 정보 (이름, 설명, 가격 등) AR 형태 제공 앱 개발.
 
-**객체 탐지 기술:** 다양한 분야 혁신적 서비스 창출 잠재력 보유. 아이디어 현실화 도전!
-
 ---
-
-## layout: section
-
-## Q&A 및 마무리 👋
-
-**오늘 강의 내용 질문 시간!**
-
-질문 자유롭게 해주세요! 😊
-
----
-
-**파이썬 & YOLOv3 객체 탐지 강의 경청 감사합니다!** 👏
-
-본 강의 통해 객체 탐지 기술 기본 이해/실습 경험 습득 기대.
-
-객체 탐지 기술 미래 발전, 다양한 분야 활용 전망.
-
-**오늘 학습 내용 바탕 객체 탐지 전문가 성장 응원!** 💪
-
-**감사합니다!** 😄
-
----
-
-## layout: end
-
-```
-
-```
