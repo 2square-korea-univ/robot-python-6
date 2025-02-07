@@ -326,13 +326,13 @@ import cv2
 import numpy as np
 
 # YOLO 모델 및 설정 파일 경로 (실제 경로로 변경 필요)
-model_cfg = "/Users/string/noba_proto/yolo/darknet/cfg/yolov3.cfg"
-model_weights = "/Users/string/noba_proto/yolo/yolov3.weights"
+model_cfg = "yolov3.cfg"
+model_weights = "yolov3.weights"
 net = cv2.dnn.readNetFromDarknet(model_cfg, model_weights)
 
 # 클래스 이름 파일 (coco names)
 classes = []
-with open("/Users/string/noba_proto/yolo/darknet/data/coco.names", "r") as f:
+with open("coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
